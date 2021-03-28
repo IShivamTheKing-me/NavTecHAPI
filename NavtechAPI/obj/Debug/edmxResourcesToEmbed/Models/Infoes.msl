@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Product_ApiModelStoreContainer" CdmEntityContainer="Product_ApiEntities">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Product_ApiModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Customer_Id" ColumnName="Customer_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Delivery_Slots">
+      <EntityTypeMapping TypeName="Product_ApiModel.Delivery_Slots">
+        <MappingFragment StoreEntitySet="Delivery_Slots">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Item_table">
+      <EntityTypeMapping TypeName="Product_ApiModel.Item_table">
+        <MappingFragment StoreEntitySet="Item_table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_details">
+      <EntityTypeMapping TypeName="Product_ApiModel.Order_details">
+        <MappingFragment StoreEntitySet="Order_details">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Cart_Value" ColumnName="Cart_Value" />
+          <ScalarProperty Name="Customer_Id" ColumnName="Customer_Id" />
+          <ScalarProperty Name="Delivery_Slot" ColumnName="Delivery_Slot" />
+          <ScalarProperty Name="Delivery_Date" ColumnName="Delivery_Date" />
+          <ScalarProperty Name="Order_Time" ColumnName="Order_Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_details">
+      <EntityTypeMapping TypeName="Product_ApiModel.Product_details">
+        <MappingFragment StoreEntitySet="Product_details">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
